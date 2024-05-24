@@ -16,21 +16,21 @@ class SuperAdminSeeder extends Seeder
     {
         // Creating Super Admin User
         $superAdmin = User::create([
-            'name' => 'Rivo',
+            'name' => 'Melisa',
             'email' => 'superadmin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $superAdmin->assignRole('Super Admin');
         // Creating Admin User
         $admin = User::create([
-            'name' => 'Meri',
+            'name' => 'Sagita',
             'email' => 'admin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $admin->assignRole('Admin');
         // Creating Product Manager User
         $productManager = User::create([
-            'name' => 'Fahri',
+            'name' => 'Capricon',
             'email' => 'operator@roles.id',
             'password' => Hash::make('123456')
         ]);
@@ -38,21 +38,21 @@ class SuperAdminSeeder extends Seeder
 
         //mengikuti tugas
         $adminBaak = User::create([
-            'name' => "Bakri",
+            'name' => "BAAK",
             'email' => 'adminbaak@roles.id',
             'password' => Hash::make('123456')
         ]);
         $adminBaak->assignRole('Admin Baak'); 
 
         $adminKeuangan = User::create([
-            'name' => "Ahmad Keuangan",
+            'name' => "KEUANGAN",
             'email' => 'adminkeuangan@roles.id',
             'password' => Hash::make('123456')
         ]);
         $adminKeuangan->assignRole('Admin Keuangan');
         
         $mahasiswa = User::create([
-            'name' => "Mahasiswa",
+            'name' => "Seorang Mahasiswa",
             'email' => 'mahasiswa@roles.id',
             'password' => Hash::make('123456'),
             'type' => 3
@@ -61,7 +61,7 @@ class SuperAdminSeeder extends Seeder
 
         // tugas AdminLTE
         $admin_lte = User::create([
-            'name' => 'AdminLTE',
+            'name' => 'Admin LTE',
             'email' => 'adminlte@roles.id',
             'password' => Hash::make('123456'),
             'type' => 4
